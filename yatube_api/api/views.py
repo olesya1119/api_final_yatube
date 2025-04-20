@@ -4,8 +4,8 @@ from rest_framework.response import Response
 from rest_framework.pagination import LimitOffsetPagination
 from django.shortcuts import get_object_or_404
 from django.contrib.auth import get_user_model
-from .models import Post, Comment, Group, Follow
-from .serializers import (
+from posts.models import Post, Comment, Group, Follow
+from posts.serializers import (
     PostSerializer,
     CommentSerializer,
     GroupSerializer,
